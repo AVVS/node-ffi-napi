@@ -1,7 +1,7 @@
 'use strict';
 const assert = require('assert');
 const path = require('path');
-const ref = require('ref-napi');
+const ref = require('@makeomatic/ref-napi');
 const ffi = require('../');
 const fs = require('fs-extra');
 const DynamicLibrary = ffi.DynamicLibrary;
@@ -23,7 +23,7 @@ describe('DynamicLibrary', function () {
       const handle = DynamicLibrary(lib + ffi.LIB_EXT);
       const symbol = handle.get('free');
       assert(Buffer.isBuffer(symbol));
-      assert.strictEqual(0, symbol.length);
+      assert.strictEqual(1, symbol.length);
     });
 
     it('should set the "name" property to the name of the symbol', function () {

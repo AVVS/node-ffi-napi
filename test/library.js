@@ -1,6 +1,6 @@
 'use strict';
 const assert = require('assert');
-const ref = require('ref-napi');
+const ref = require('@makeomatic/ref-napi');
 const Struct = require('ref-struct-di')(ref);
 const ffi = require('../');
 const DynamicLibrary = ffi.DynamicLibrary;

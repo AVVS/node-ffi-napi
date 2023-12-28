@@ -252,8 +252,12 @@ int test_ref_56(struct Obj56 *obj) {
  */
 template<typename T>
 inline Value WrapPointer(Env env, T* ptr, size_t length = 0) {
-  if (ptr == nullptr)
+  if (ptr == nullptr) {
     length = 0;
+  } else if (length == 0) {
+    length = 1;
+  }
+
   return Buffer<char>::New(env,
                            reinterpret_cast<char*>(ptr),
                            length,
