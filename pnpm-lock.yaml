@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@makeomatic/ref-napi':
-    specifier: ^3.0.4
-    version: 3.0.4
+    specifier: ^3.0.6
+    version: 3.0.6
   debug:
     specifier: ^4.1.1
     version: 4.3.4(supports-color@8.1.1)
@@ -325,8 +325,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@makeomatic/ref-napi@3.0.4:
-    resolution: {integrity: sha512-djRDJqSwFiv2lD6T3uFiim8bbhxHwH/i1Q88gNFUp0dseHYB70//7Xe7s4a01SreL5H4CcTfOiVCTikX3vO0KQ==}
+  /@makeomatic/ref-napi@3.0.6:
+    resolution: {integrity: sha512-PNAcp1M1kQPL6xYu16KCVM9oAAqGDRB4nEWgxTvYrxXpYiiit2ClomQI9umnJ7gMpG8vnaSFhFA+6XzPnWxSNQ==}
     engines: {node: '>= 10.0'}
     requiresBuild: true
     dependencies:
